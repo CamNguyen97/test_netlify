@@ -1,5 +1,5 @@
 ---
-title: Say hello to Gridsome 🎉
+title: me
 date: 2019-02-07
 tags: ['Markdown', 'Releases']
 published: true

@@ -1,0 +1,10 @@
+// Used for generic body text, matching content-box layout, but without the box.
+.body-text {
+	// background-color: var(--bg-content-color);
+	max-width: var(--content-width);
+	margin: 0 auto;
+	padding: var(--space);
+
+
+ 
+}

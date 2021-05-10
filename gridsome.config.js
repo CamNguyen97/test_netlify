@@ -5,11 +5,12 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome Blog Starter',
-  siteDescription: 'A simple, hackable & minimalistic starter for Gridsome that uses Markdown for content.',
+  siteName: 'Clarity Technical Services',
+  siteDescription: 'Advisory and Project Management Services for AV/IT and Control Systems on Superyachts',
 
   templates: {
-    Post: '/:title',
+    Testimonial: '/testimonials/:author',
+    Post: '/blog/:title',
     Tag: '/tag/:id'
   },
 
@@ -28,7 +29,23 @@ module.exports = {
           }
         }
       }
+    },
+    {
+      // Create posts from markdown files
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Testimonial',
+        path: 'content/testimonials/*.md',
+        refs: {
+          // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
+          tags: {
+            typeName: 'Tag',
+            create: true
+          }
+        }
+      }
     }
+    
   ],
 
   transformers: {
