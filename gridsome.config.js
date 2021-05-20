@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Clarity Technical Services',
-  siteDescription: 'Advisory and Project Management Services for AV/IT and Control Systems on Superyachts',
+  siteDescription: 'Expert Advice on AV/IT Systems for Superyachts and High-End Properties',
 
   templates: {
     Testimonial: '/testimonials/:author',

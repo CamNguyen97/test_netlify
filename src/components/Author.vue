@@ -1,19 +1,21 @@
 <template>
 	<div class="author">
-
-		<g-image alt="Author image" class="author__image" src="~/assets/images/author.png" width="180" height="180" blur="5" />
+		<g-image alt="Author image" class="author__image" src="~/assets/images/author.png"  blur="5" />
 
 		<h1 v-if="showTitle" class="author__site-title">
 			{{ $static.metadata.siteName }}
 		</h1>
 
-		<p class="author__intro">
+		<p v-if="showIntro" class="author__intro">
 			{{ $static.metadata.siteDescription }}
 		</p>
 
-		<p class="author__links">
-			<a href="//github.com/gridsome/gridsome-starter-blog">GitHub</a>
+		<p v-if="showLinks" class="author__links">
+			<g-link to="/about/"><strong>About Me</strong></g-link>
+			<g-link to="/services/"><strong>Services</strong></g-link>
+    		<g-link to="/testimonials/"><strong>Testimonials</strong></g-link>
 		</p>
+		<p><a href="https://www.linkedin.com/in/edelenbosedwin/" target="_blank">Follow me on LinkedIn</a></p>
 
 	</div>
 </template>
@@ -29,7 +31,7 @@ query {
 
 <script>
 export default {
-	props: ['showTitle']
+	props: ['showTitle', 'showIntro', 'showLinks']
 }
 </script>
 
@@ -41,9 +43,9 @@ export default {
 	padding: calc(var(--space) / 2) 0;
 
 	&__image {
-		border-radius: 100%;
+		// border-radius: 100%;
 		width: 150px;
-		height: 150px;
+		height: auto;
 		margin-bottom: 1em;
 	}
 

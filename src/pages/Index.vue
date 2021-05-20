@@ -1,12 +1,12 @@
 <template>
   <Layout :show-logo="false">
-    <Author :show-title="true" />
+    <Author :show-title="true" :show-intro="true" :show-links="true" />
 
     <div class="main-text body-text">
       <p>
-        Catering to the needs of superyacht owners and high end property owners
-        looking for a respected and trusted sparring partner/advisor in the
-        fields of:
+        Clarity Technical Services is a valuable resource for owners of
+        superyachts and high-end properties, looking for a reliable expert to
+        ensure they get the best out of their:
       </p>
 
       <ul>
@@ -14,19 +14,22 @@
         <li>IT Systems</li>
         <li>Lighting Systems</li>
         <li>Control Systems</li>
-        <li>Special Features (AV/IT/Lighting related)</li>
+        <li>Special Features (AV/IT/Lighting/Control related)</li>
       </ul>
 
+      <h2>A Trusted Name In The Superyacht Industry</h2>
       <p>
         Clarity Technical Services was founded, and is operated by Edwin
         Edelenbos. The testimonials on this website regarding both his skills
         and his character, speak for themselves.
       </p>
       <p>
-        A sample of testimonials can be found below, and a complete list can be
-        found on the
+        A small selection of testimonials can be found below, a complete list
+        can be found on the
         <g-link to="/testimonials/"><strong>testimonials</strong></g-link> page.
       </p>
+
+      <h3>A Few Testimonials...</h3>
     </div>
 
     <!-- List testimonials -->
@@ -73,14 +76,14 @@ export default {
     TestimonialCard,
   },
   metaInfo: {
-    title: "Hello, world!",
+    title: "Home",
   },
 };
 </script>
 
 <style lang="scss">
 .main-text {
-  margin-bottom: var(--space);
+  // margin-bottom: var(--space);
   position: relative;
 
   &__header {

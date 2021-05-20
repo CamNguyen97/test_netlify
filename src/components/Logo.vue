@@ -1,6 +1,6 @@
 <template>
 	<g-link class="logo" to="/">
-	  <span class="logo__text">
+	  <span class="logo__text"><span><g-image alt="Clarity Logo" class="logo__image" src="~/assets/images/Clarity_Logo_1.svg" width="180" height="180" blur="5" /></span>
 	    &larr; {{ $static.metadata.siteName }}
 	  </span>
 	</g-link>
