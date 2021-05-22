@@ -4,11 +4,17 @@
       <h1 class="post-title__text">
         {{ $page.testimonial.author }}
       </h1>
+
+      <TestimonialMeta :testimonial="$page.testimonial" />
     </div>
 
     <div class="post content-box">
       <div class="post__header">
-        <g-image alt="Cover image" v-if="$page.testimonial.cover_image" :src="$page.testimonial.cover_image" />
+        <g-image
+          alt="Cover image"
+          v-if="$page.testimonial.cover_image"
+          :src="$page.testimonial.cover_image"
+        />
       </div>
 
       <div class="post__content" v-html="$page.testimonial.content" />
@@ -27,21 +33,23 @@
 </template>
 
 <script>
-import TestimonialTags from '~/components/TestimonialTags'
-import Author from '~/components/Author.vue'
+import TestimonialMeta from "~/components/TestimonialMeta";
+import TestimonialTags from "~/components/TestimonialTags";
+import Author from "~/components/Author.vue";
 
 export default {
   components: {
     Author,
-    TestimonialTags
+    TestimonialTags,
+    TestimonialMeta
   },
-  metaInfo () {
+  metaInfo() {
     return {
       author: this.$page.testimonial.author,
-      role: this.$page.testimonial.role
-      }
-  }
-}
+      role: this.$page.testimonial.role,
+    };
+  },
+};
 </script>
 
 <page-query>
@@ -69,7 +77,6 @@ query Testimonial ($id: ID!) {
 }
 
 .post {
-
   &__header {
     width: calc(100% + var(--space) * 2);
     margin-left: calc(var(--space) * -1);

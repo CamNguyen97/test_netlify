@@ -11,7 +11,8 @@ module.exports = {
   templates: {
     Testimonial: '/testimonials/:author',
     Post: '/blog/:title',
-    Tag: '/tag/:id'
+    Tag: '/tag/:id',
+    TestimonialTag: '/testimonialtag/:id'
   },
 
   plugins: [
@@ -39,7 +40,7 @@ module.exports = {
         refs: {
           // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
           tags: {
-            typeName: 'Tag',
+            typeName: 'TestimonialTag',
             create: true
           }
         }

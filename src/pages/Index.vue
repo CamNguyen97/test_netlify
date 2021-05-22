@@ -3,18 +3,19 @@
     <Author :show-title="true" :show-intro="true" :show-links="true" />
 
     <div class="main-text body-text">
+      <h2>Expertise</h2>
       <p>
         Clarity Technical Services is a valuable resource for owners of
-        superyachts and high-end properties, looking for a reliable expert to
-        ensure they get the best out of their:
+        superyachts and high-end properties looking for a reliable expert to
+        ensure they get the best out of their systems.
       </p>
 
       <ul>
-        <li>Audio Visial/Entertainment Systems</li>
-        <li>IT Systems</li>
-        <li>Lighting Systems</li>
-        <li>Control Systems</li>
-        <li>Special Features (AV/IT/Lighting/Control related)</li>
+        <li>Audio Visial/Entertainment</li>
+        <li>IT</li>
+        <li>Lighting</li>
+        <li>Control</li>
+        <li>Special Features (related to the above)</li>
       </ul>
 
       <h2>A Trusted Name In The Superyacht Industry</h2>
