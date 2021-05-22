@@ -7,6 +7,7 @@
 module.exports = {
   siteName: 'Clarity Technical Services',
   siteDescription: 'Expert Advice on AV/IT Systems for Superyachts and High-End Properties',
+  siteUrl: 'https://clarity-tech.nl',
 
   templates: {
     Testimonial: '/testimonials/:author',
@@ -16,6 +17,15 @@ module.exports = {
   },
 
   plugins: [
+    {
+      use: 'gridsome-plugin-robots-txt'
+    },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        exclude: ['/testimonialtag/*', '/testimonials/*', '/tag/*', '/404', '/blog']
+      }
+    },
     {
       // Create posts from markdown files
       use: '@gridsome/source-filesystem',
@@ -46,7 +56,7 @@ module.exports = {
         }
       }
     }
-    
+
   ],
 
   transformers: {
