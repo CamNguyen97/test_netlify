@@ -31,7 +31,7 @@ import TestimonialMeta from "~/components/TestimonialMeta";
 export default {
   components: {
     TestimonialTags,
-    TestimonialMeta
+    TestimonialMeta,
   },
   props: ["testimonial"],
 };

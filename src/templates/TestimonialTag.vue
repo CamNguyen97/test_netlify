@@ -5,7 +5,11 @@
     </h1>
 
     <div class="posts">
-      <TestimonialCard v-for="edge in $page.testimonialTag.belongsTo.edges" :key="edge.node.id" :testimonial="edge.node"/>
+      <TestimonialCard
+        v-for="edge in $page.testimonialTag.belongsTo.edges"
+        :key="edge.node.id"
+        :testimonial="edge.node"
+      />
     </div>
   </Layout>
 </template>
@@ -32,21 +36,20 @@ query TestimonialTag ($id: ID!) {
 </page-query>
 
 <script>
-import Author from '~/components/Author.vue'
-import TestimonialCard from '~/components/TestimonialCard.vue'
+import Author from "~/components/Author.vue";
+import TestimonialCard from "~/components/TestimonialCard.vue";
 
 export default {
   components: {
     Author,
-    TestimonialCard
+    TestimonialCard,
   },
   metaInfo: {
-    title: 'Tags'
-  }
-}
+    title: "Tags",
+  },
+};
 </script>
 
 <style lang="scss">
-
 </style>
 

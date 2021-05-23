@@ -35,7 +35,9 @@
         for a technical specification.
       </p>
       <p>
-        <strong>Note:</strong> Here is where I can go quite a few steps further than most. If you want something that does not exist off the shelf, my design services reach far beyond 
+        <strong>Note:</strong> Here is where I can go quite a few steps further
+        than most. If you want something that does not exist off the shelf, my
+        design services reach far beyond
       </p>
 
       <h2>Creating Specifications For Your Systems</h2>

@@ -18,15 +18,6 @@ module.exports = {
 
   plugins: [
     {
-      use: 'gridsome-plugin-robots-txt'
-    },
-    {
-      use: '@gridsome/plugin-sitemap',
-      options: {
-        exclude: ['/testimonialtag/*', '/testimonials/*', '/tag/*', '/404', '/blog']
-      }
-    },
-    {
       // Create posts from markdown files
       use: '@gridsome/source-filesystem',
       options: {
@@ -55,8 +46,16 @@ module.exports = {
           }
         }
       }
+    },
+    {
+      use: 'gridsome-plugin-robots-txt'
+    },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        exclude: ['/testimonialtag/*', '/testimonials/*', '/tag/*', '/404', '/blog']
+      }
     }
-
   ],
 
   transformers: {

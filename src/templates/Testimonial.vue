@@ -41,7 +41,7 @@ export default {
   components: {
     Author,
     TestimonialTags,
-    TestimonialMeta
+    TestimonialMeta,
   },
   metaInfo() {
     return {
