@@ -28,7 +28,7 @@
       <!-- Add comment widgets here -->
     </div>
 
-    <Author class="post-author" />
+    <Author class="post-author" :show-title="true" :show-intro="false" :show-links="false"/>
   </Layout>
 </template>
 
