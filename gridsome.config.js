@@ -15,6 +15,7 @@ module.exports = {
     Tag: '/tag/:id',
     TestimonialTag: '/testimonialtag/:id'
   },
+  
 
   plugins: [
     {

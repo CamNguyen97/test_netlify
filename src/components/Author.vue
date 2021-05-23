@@ -6,6 +6,7 @@
       src="~/assets/images/author.png"
       blur="5"
       width="150px"
+      height="180px"
     />
 
     <h1 v-if="showTitle" class="author__site-title">

@@ -5,7 +5,7 @@
         ><g-image
           alt="Clarity Logo"
           class="logo__image"
-          src="~/assets/images/Clarity_Logo_1.jpg"
+          src="~/assets/images/Clarity_Logo_1.svg"
           width="180"
           height="180"
           blur="5"
