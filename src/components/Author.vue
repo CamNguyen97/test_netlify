@@ -7,6 +7,7 @@
       blur="5"
       width="150px"
       height="180px"
+      immediate="true"
     />
 
     <h1 v-if="showTitle" class="author__site-title">

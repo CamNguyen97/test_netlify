@@ -9,6 +9,8 @@
           width="180"
           height="180"
           blur="5"
+          immediate="true"
+          data-netlify="true"
       /></span>
       &larr; {{ $static.metadata.siteName }}
     </span>
